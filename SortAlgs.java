@@ -17,7 +17,7 @@ public class SortAlgs {
        int[] arr = {1, 56, 23, 78, 15};
        
        System.out.println(Arrays.toString(arr));
-       int[] res = QuickSort.sortNew(arr);
+       int[] res = BubbleSort.sortNew(arr);
        System.out.println(Arrays.toString(res));
     }
     
