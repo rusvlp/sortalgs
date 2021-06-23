@@ -15,18 +15,16 @@ public class InsertionSort {
     public static void sort(int[] arr){
         int tmp = 0, buf = 0, tmpc = 0;
         
-        for (int i = 0; i<arr.length-1; i++){
-            tmp = arr[i+1];
-            for (int j = 0; j<i; j++){
-              if (tmp<arr[j]){
-                  arr[j] = tmp;
-                  buf++;
-              }
-              tmpc = arr[j+buf];
-              arr[j+buf] = arr[j];
-              arr[j] = tmp;
-              System.out.println(Arrays.toString(arr));
+        for (int i = 1; i<arr.length; i++){
+            tmp = arr[i];
+            
+            int j = i;
+            while (j > 0 && arr[j-1] > tmp){
+                arr[j] = arr[j-1];
+                j--;
             }
+            arr[j] = tmp;
         }
+       
     }
 }
