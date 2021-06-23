@@ -14,11 +14,11 @@ public class SortAlgs {
 
 
     public static void main(String[] args) {
-       int[] arr = {-1, 56, 23, 78, 15, 228, 43, -1, 1, 1};
+       int[] arr = {5, 1, 13, 18, 4 -1};
        
        System.out.println(Arrays.toString(arr));
-       int[] res = CountSort.sortNew(arr);
-       System.out.println(Arrays.toString(res));
+       InsertionSort.sort(arr);
+       System.out.println(Arrays.toString(arr));
     }
     
 }
